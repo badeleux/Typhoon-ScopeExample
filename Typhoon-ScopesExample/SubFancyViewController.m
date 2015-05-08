@@ -7,6 +7,7 @@
 //
 
 #import "SubFancyViewController.h"
+#import "ApplicationAssembly.h"
 
 @interface SubFancyViewController ()
 
@@ -39,6 +40,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)fancyRepoFromAssembly:(id)sender {
+    [self.assembly fancyRepository];
 }
 
 /*

@@ -30,6 +30,8 @@
                                               parameters:^(TyphoonMethod *initializer) {
                                                   [initializer injectParameterWith:[self fancyRepository]];
                                               }];
+                              [definition injectProperty:@selector(assembly)
+                                                    with:self];
                           }];
 }
 

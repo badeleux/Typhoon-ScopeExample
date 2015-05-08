@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @class FancyRepository;
+@class ApplicationAssembly;
 
 @interface SubFancyViewController : UIViewController
 
 - (instancetype)initWithFancyRepository:(FancyRepository*)fancyRepo;
+
+@property ApplicationAssembly *assembly;
 
 @end
